@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bogdan Ursache</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        var linkElement = document.getElementById("pdf-resume");
+
+        linkElement.addEventListener("click", () => {
+          var resumeElement = document.body;
+          var filename = "Bogdan Ursache - digital resume.pdf";
+          var pdfOptions = {
+            margin: 10,
+            filename,
+            image: { type: "jpeg", quality: 1 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+          };
+
+          html2pdf().set(pdfOptions).from(resumeElement).save();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="container--main">
+      <section id="wrapper--hero" class="section--page">
+        <img id="profile-pic" src="./assets/images/profile-pic.png" />
+
+        <div>
+          <h1 id="user-name">Bogdan Ursache</h1>
+          <p id="bio">Software Engineer - Javascript Enthusiast</p>
+          <p id="currently-working">
+            🧑🏻‍💻 Currently working at
+            <a href="https://www.endava.com/" target="_blank">Endava</a>
+          </p>
+          <p id="email">
+            📬
+            <a href="mailto:bogdang.ursache@gmail.com" target="_blank"
+              >bogdang.ursache@gmail.com</a
+            >
+          </p>
+          <p id="linkedin">
+            💼
+            <a href="https://www.linkedin.com/in/bogdanursache/" target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+          <p id="github">
+            💾 <a href="https://github.com/bursache" target="_blank">GitHub</a>
+          </p>
+          <p id="resume" data-html2canvas-ignore="true">
+            🖨️
+            <a href="#" id="pdf-resume">Download Resume</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section--page">
+        <h2>Tech stack</h2>
+
+        <div id="wrapper--techstack__items">
+          <div class="card--techstack">
+            <span> JavaScript, TypeScript, NodeJS</span>
+          </div>
+          <div class="card--techstack">
+            <span> MongoDB, Postgres, ElasticSearch, MySQL</span>
+          </div>
+          <div class="card--techstack">
+            <span>AWS, Docker</span>
+          </div>
+          <div class="card--techstack">
+            <span>Angular</span>
+          </div>
+          <div class="card--techstack">
+            <span>git</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="work-history-wrapper" class="section--page">
+        <h2>Work History</h2>
+
+        <div class="line-break"></div>
+        <div class="card--work-history">
+          <strong
+            >🚧 NodeJS Backend Engineer at Endava for RELX - commercial real
+            estate</strong
+          >
+          <p>06/2022 - 05/2024</p>
+          <strong>Tasks</strong>
+          <ul>
+            <li>
+              develop REST APIs and other microservices using different
+              databases
+            </li>
+            <li>conduct code reviews following the latest coding standards</li>
+            <li>extend and improve codebase and API endpoints performance</li>
+            <li>
+              write unit, integration and end-to-end tests to secure code
+              quality
+            </li>
+            <li>
+              research and create proof of concepts on different technical
+              solutions
+            </li>
+            <li>cross-team collaboration</li>
+            <li>participate in estimation process, demos for stakeholders</li>
+            <li>working with Agile methodologies (Scrum)</li>
+          </ul>
+          <div id="wrapper--techstack__items">
+            <div class="card--techstack">
+              <span>JavaScript, TypeScript, NodeJS</span>
+            </div>
+            <div class="card--techstack">
+              <span>Express, Locomotive, Sails, Hapi, fastify, restify</span>
+            </div>
+            <div class="card--techstack">
+              <span>AngularJS, Angular, React, HTML, CSS</span>
+            </div>
+            <div class="card--techstack">
+              <span>Postgres, MongoDB, ElasticSearch, MySQL</span>
+            </div>
+            <div class="card--techstack">
+              <span>AWS, Docker, TeamCity, REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="line-break"></div>
+
+        <div class="card--work-history">
+          <strong
+            >🚧 NodeJS Backend Engineer at Endava for OneBanx - bank agnostic
+            platform to facilitate banking services
+          </strong>
+          <p>08/2020 - 05/2022</p>
+          <strong>Tasks</strong>
+          <ul>
+            <li>
+              develop new backend modules and integration with diferent cash
+              machines (NCR/G4S)
+            </li>
+            <li>
+              involved in the Discovery phase for Business Winning programme
+              (prior this period of time)
+            </li>
+            <li>unit and end-to-end testing</li>
+            <li>code reviews</li>
+            <li>analyse client’s needs</li>
+            <li>
+              collaborate with client for daily basis and with the team in order
+              to clarify the requirements, send updates on the project status
+              and delivery, create release plans
+            </li>
+            <li>
+              backend team management, support for the translated business needs
+              into technical requirements
+            </li>
+            <li>
+              participate in meetings involving 3rd parties in order to
+              understand the business needs and the mechanisms for the
+              integration with their services
+            </li>
+            <li>
+              participate in estimation process and demos for stakeholders
+            </li>
+            <li>cross-team collaboration</li>
+            <li>working with Agile methodology (Scrum)</li>
+            <li>winning The VRP Hackathon (devpost)</li>
+          </ul>
+
+          <div id="wrapper--techstack__items">
+            <div class="card--techstack">
+              <span>JavaScript, TypeScript, NodeJS</span>
+            </div>
+            <div class="card--techstack">
+              <span>NestJS</span>
+            </div>
+            <div class="card--techstack">
+              <span>Postgres</span>
+            </div>
+            <div class="card--techstack">
+              <span>AWS, Docker, REST APIs</span>
+            </div>
+            <div class="card--techstack">
+              <span
+                >OpenBanking APIs, Authlete, Onfido, Comply Advantage, NuaPay,
+                MoneyHub, Trust Stamp, NCR, G4S</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="line-break"></div>
+
+        <div class="card--work-history">
+          <strong
+            >🚧 Frontend Engineer at Endava for Cisco - meetings collaboration
+            platform
+          </strong>
+          <p>05/2020 - 07/2020</p>
+          <strong>Tasks</strong>
+          <ul>
+            <li>develop new frontend modules</li>
+            <li>extend and improve already existing functionality</li>
+            <li>cross-team collaboration</li>
+            <li>work with Agile methodology (Scrum)</li>
+          </ul>
+
+          <div id="wrapper--techstack__items">
+            <div class="card--techstack">
+              <span>JavaScript</span>
+            </div>
+            <div class="card--techstack">
+              <span>React, HTML, CSS</span>
+            </div>
+            <div class="card--techstack">
+              <span>REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="line-break"></div>
+
+        <div class="card--work-history">
+          <strong
+            >🚧 Fullstack Engineer at Endava for Reach plc - media publishing
+            platform
+          </strong>
+
+          <p>06/2018 - 03/2020</p>
+          <strong>Tasks</strong>
+          <ul>
+            <li>build widgets for the AMP version of the websites</li>
+            <li>extend and improve already existing functionality</li>
+            <li>
+              build a new cloud infrastructure for the mobile apps backend
+            </li>
+            <li>analyse and improve the project performance</li>
+            <li>
+              maintain and extend the client’s support for all publications
+            </li>
+            <li>unit testing</li>
+            <li>participate in estimation process and demos</li>
+            <li>work with Agile methodology (Scrum)</li>
+          </ul>
+
+          <div id="wrapper--techstack__items">
+            <div class="card--techstack">
+              <span>JavaScript, NodeJS</span>
+            </div>
+            <div class="card--techstack">
+              <span>Express, restify, GraphQL, jQuery, HTML, CSS</span>
+            </div>
+            <div class="card--techstack">
+              <span>Postgres</span>
+            </div>
+            <div class="card--techstack">
+              <span>AWS, Docker, Drone.io, Jenkins</span>
+            </div>
+            <div class="card--techstack">
+              <span>REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="line-break"></div>
+
+        <div class="card--work-history">
+          <strong
+            >🚧 Frontend Engineer at Endava for Diamos (FNZ) - assets management
+            platform
+          </strong>
+          <p>05/2017 - 06/2018</p>
+          <strong>Tasks</strong>
+          <ul>
+            <li>develop new frontend modules</li>
+            <li>unit and end-to-end testing</li>
+            <li>analyse client’s needs</li>
+            <li>
+              participate in estimation process and demos for stakeholders
+            </li>
+            <li>cross-team collaboration</li>
+            <li>working with Agile methodology (Scrum)</li>
+          </ul>
+
+          <div id="wrapper--techstack__items">
+            <div class="card--techstack">
+              <span>JavaScript, TypeScript</span>
+            </div>
+            <div class="card--techstack">
+              <span>Angular</span>
+            </div>
+            <div class="card--techstack">
+              <span>Postgres</span>
+            </div>
+            <div class="card--techstack">
+              <span>ActiveMQ</span>
+            </div>
+            <div class="card--techstack">
+              <span>REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="line-break"></div>
+
+        <div class="card--work-history">
+          <strong>🚧 Fullstack Developer at Thinslices</strong>
+          <p>07/2013 - 04/2017</p>
+          <strong>Projects</strong>
+          <ul>
+            <li>
+              <strong>Hppy - Happiness Analytics</strong>: cross-platform
+              product to help companies and small teams gather feedbck from
+              their employees, track theris happiness levels and be more
+              proactive on issues that may arise
+            </li>
+            <li>
+              <strong>makerSQR</strong>: cross-platform product that matches
+              resources with those that need them for projects in a new way and
+              allows you to track and share project progress from anywhere
+            </li>
+            <li>
+              <strong>iSEEit</strong>: tool to enable sales teams to close their
+              deals faster
+            </li>
+            <li>
+              <strong>Allcal</strong>: cross-platform product to manage your
+              calendars in one place
+            </li>
+            <li><strong>GoWall</strong>: realtime meeting application</li>
+          </ul>
+          <strong>Tasks</strong>
+          <ul>
+            <li>develop new backend & frontend modules</li>
+            <li>unit and end-to-end testing</li>
+            <li>analyse client’s needs</li>
+            <li>
+              participate in estimation process and demos for stakeholders
+            </li>
+            <li>cross-team collaboration</li>
+            <li>working with Agile methodology (Scrum)</li>
+          </ul>
+
+          <div id="wrapper--techstack__items">
+            <div class="card--techstack">
+              <span>JavaScript, TypeScript, NodeJS</span>
+            </div>
+            <div class="card--techstack">
+              <span>Express, Locomotive, Sails, Hapi</span>
+            </div>
+            <div class="card--techstack"><span>AngularJS, HTML, CSS</span></div>
+            <div class="card--techstack">
+              <span>Postgres, MongoDB, MySQL</span>
+            </div>
+            <div class="card--techstack">
+              <span>AWS, Docker, RabbitMQ</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="line-break"></div>
+
+        <div class="card--work-history">
+          <strong>🚧 Freelancer at freelancer.com</strong>
+          <p>11/2012 - 06/2013</p>
+          <strong>Tasks</strong>
+          <ul>
+            <li>develop new backend & frontend modules for various projects</li>
+            <li>bugfix and codebase improvements</li>
+            <li>analyse client’s needs</li>
+          </ul>
+          <div id="wrapper--techstack__items">
+            <div class="card--techstack">
+              <span>JavaScript, TypeScript, NodeJS, PHP, jQuery</span>
+            </div>
+            <div class="card--techstack">
+              <span>Express, Locomotive, Sails, Hapi, fastify, restify</span>
+            </div>
+            <div class="card--techstack">
+              <span>AngularJS, HTML, CSS, Bootstrap</span>
+            </div>
+            <div class="card--techstack">
+              <span>Postgres, MongoDB, MySQL</span>
+            </div>
+            <div class="card--techstack">
+              <span>AWS, Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="line-break"></div>
+
+        <div class="card--work-history">
+          <strong>🚧 Freelancer at vWorker</strong>
+          <p>01/2010 - 11/2012</p>
+          <strong>Tasks</strong>
+          <ul>
+            <li>develop new backend & frontend modules for various projects</li>
+            <li>bugfix and codebase improvements</li>
+            <li>analyse client’s needs</li>
+          </ul>
+          <div id="wrapper--techstack__items">
+            <div class="card--techstack">
+              <span>JavaScript, TypeScript, NodeJS, PHP, jQuery</span>
+            </div>
+            <div class="card--techstack">
+              <span>Express, Locomotive, Sails, Hapi, fastify, restify</span>
+            </div>
+            <div class="card--techstack">
+              <span>AngularJS, HTML, CSS, Bootstrap</span>
+            </div>
+            <div class="card--techstack">
+              <span>Postgres, MongoDB, MySQL</span>
+            </div>
+            <div class="card--techstack">
+              <span>AWS, Docker</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--page">
+        <h2>Certifications & Accomplishments</h2>
+
+        <div class="card--project">
+          <a
+            href="https://devpost.com/bogdan-ursache/challenges?trk=public_profile_project-title"
+            ><span>🏆 </span>The VRP Hackathon (powered by Ozone)</a
+          >
+        </div>
+
+        <div class="card--project">
+          <a
+            href="https://courses.edx.org/certificates/user/8887808/course/course-v1:MongoDBx+M101x+3T2015?trk=public_profile_see-credential"
+            ><span>📜 </span>edX Verified Certificate for Introduction to
+            MongoDB using the MEAN Stack</a
+          >
+        </div>
+
+        <div class="card--project">
+          <a
+            href="https://university.mongodb.com/course_completion/689af55c-e898-482e-9bc4-97e87006?trk=public_profile_see-credential"
+            ><span>📜 </span>MongoDB University - M101JS: MongoDB for Node.js
+            Developers</a
+          >
+        </div>
+
+        <div class="card--project">
+          <a
+            href="https://university.mongodb.com/course_completion/9bfe9058-a9b6-4b9f-b7c1-541e6158?trk=public_profile_see-credential"
+            ><span>📜 </span>MongoDB University - M201: MongoDB Performance</a
+          >
+        </div>
+
+        <div class="card--project">
+          <a
+            href="https://university.mongodb.com/course_completion/b53d8fca2a63457c95b5e199939fb3b0?trk=public_profile_see-credential"
+            ><span>📜 </span> MongoDB University - M310: MongoDB Security</a
+          >
+        </div>
+
+        <div class="card--project">
+          <a
+            href="https://university.mongodb.com/course_completion/7b994dfd-448c-45e1-9dc7-dde7e605?trk=public_profile_see-credential"
+            ><span>📜 </span>MongoDB University - M312: Diagnostics and
+            Debugging</a
+          >
+        </div>
+      </section>
+
+      <section class="section--page">
+        <h2>Education</h2>
+
+        <div class="card--project">
+          <span>🎓 </span>MSc, Information Security - Faculty of Computer
+          Science, Alexandru Ioan Cuza University of Iasi, Romania (2011 - 2013)
+        </div>
+        <div class="card--project">
+          <span>🎓 </span>BSc, Computer Science - Faculty of Computer Science,
+          Alexandru Ioan Cuza University of Iasi, Romania (2008 - 2011)
+        </div>
+      </section>
+
+      <section class="section--page">
+        <h5>Last update: 20/05/2024</h5>
+      </section>
+    </div>
+  </body>
+</html>
